@@ -769,7 +769,6 @@ void boss(){
     do{
     while (heroesRemaining > 0 && enemy_health > 0){
         cout <<"\n\n\t\tYour Turn HEROES"<< endl;
-        cout <<"\t\t\t HEROES: "<<heroesRemaining<<endl;
         cout << "\n\t\t\t\t\t\t\tMorgaroth's Health: " << enemy_health << endl;
         for(int i = 0; i < 3; i++){
             if (heroes_health[i] > 0){
@@ -868,13 +867,7 @@ void stage3(){
     cout << "\n\n\n                                     BATTLE BEGINS!                     " << endl;
     boss();
 }
-void end(){
-    
-    
-    system ("pause");
-    system("cls");
-    cout <<"\n\n\n\n\t\t\t\t THANKS FOR PLAYING!"<<endl;
-}
+
 int main(){
     start();
     menu();
