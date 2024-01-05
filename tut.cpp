@@ -780,7 +780,7 @@ void boss(){
         if(h_turn == 'j' || h_turn == 'J'){
             srand(static_cast<unsigned int>(time(0)));
             int enemy_damage = rand() % (enemies.e_damage[2]/2);
-            int targetHero = rand() % 5;
+            int targetHero = rand() % 3;
             if(heroes_health[targetHero] > 0) {
                 heroes_health[targetHero] -= enemy_damage;
                 if (heroes_health[targetHero] <= 0){
@@ -791,7 +791,7 @@ void boss(){
         }else if(h_turn == 'l' || h_turn == 'L'){
             srand(static_cast<unsigned int>(time(0)));
             int enemy_damage = rand() % enemies.e_damage[2];
-            int targetHero = rand() % 5;
+            int targetHero = rand() % 3;
             if(heroes_health[targetHero] > 0) {
                 heroes_health[targetHero] -= enemy_damage;
                 if (heroes_health[targetHero] <= 0){
